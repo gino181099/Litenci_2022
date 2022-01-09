@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700&display=swap");
+:root {
+  --main-color: #03dac6;
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: Poppins, sans-serif;
+}
+body {
+  background-color: #151515;
+  color: white;
+  overflow-x: hidden;
+}
+.App,
+.header {
+  max-width: 1920px;
+  margin: auto;
+  overflow-x: hidden;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 50px;
+  margin-right: 100px;
+  font-size: 18px;
+  font-weight: 500;
+  position: fixed;
+  width: 100vw;
+  overflow-x: hidden;
+  z-index: 999;
+  mix-blend-mode: difference;
+}
+.logo {
+  color: var(--main-color);
+  font-weight: 600;
+}
+.menu {
+  display: flex;
+  column-gap: 25px;
+  color: white;
+  margin-right: 125px;
+}
+.heading {
+  padding-top: 100px;
+}
+.content__heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 115px;
+  flex-wrap: wrap;
+}
+.big {
+  font-size: 14rem;
+  font-weight: 500;
+  line-height: 120%;
+  mix-blend-mode: difference;
+}
+.text__content {
+  max-width: 500px;
+  font-size: 24px;
+  font-weight: 600;
+  mix-blend-mode: difference;
+}
+.marquee__heading {
+  width: fit-content;
+  display: flex;
+  position: relative;
+  transform: translate3d(calc(-25%), 0, 0);
+  animation: marquee 5s linear infinite;
+  column-gap: 100px;
+  mix-blend-mode: difference;
+}
+@keyframes marquee {
+  0% {
+    transform: translate3d(calc(-25%), 0, 0);
+  }
+
+  100% {
+    transform: translate3d(calc(-50% - 28px), 0, 0);
+  }
+}
+
+@keyframes marquee-lg {
+  0% {
+    transform: translate3d(calc(-25% + 10vw), 0, 0);
+  }
+
+  100% {
+    transform: translate3d(calc(-50% + 10vw), 0, 0);
+  }
+}
+.design__heading p {
+  text-align: center;
+  color: white;
+  position: relative;
+  z-index: 2;
+}
+.design__heading img {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+  transform: translateY(-115px);
+}
+.what {
+  position: relative;
+}
+.what h2,
+.how h2 {
+  text-transform: uppercase;
+  font-family: Bebas Neue;
+  text-align: center;
+  font-size: 200px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 200px 20px;
+  font-weight: 400;
+}
+.what h2 {
+  padding-top: calc(200px - 115px);
+}
+.what h3 {
+  text-transform: uppercase;
+  font-family: Bebas Neue;
+  font-size: 54px;
+  padding: 0px 50px;
+  font-weight: 400;
+  padding-bottom: 75px;
+}
+.what ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 75px;
+}
+.what ul li a {
+  font-size: 120px;
+  font-weight: 700;
+  line-height: 90%;
+  -webkit-text-stroke: 3px white;
+  color: black;
+  text-align: center;
+  position: relative;
+  display: block;
+}
+.what .more {
+  position: absolute;
+  bottom: 90px;
+  right: 0;
+  transform: rotate(-90deg);
+  font-weight: 400;
+  font-family: Bebas Neue;
+  font-size: 36px;
+}
+.how div {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px;
+  margin: 300px 0;
+  align-items: flex-start;
+}
+.how div:nth-child(1) {
+  margin-top: 0;
+}
+.how img {
+  width: 600px;
+  filter: saturate(0%);
+  object-fit: cover;
+}
+.how div p {
+  width: 600px;
+  font-size: 36px;
+  font-weight: 400;
+}
+.how div p a,
+.left__contact a {
+  color: var(--main-color);
+  text-decoration: underline;
+  cursor: pointer;
+}
+.how .backFont__how {
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 100%;
+  transform: translateY(-38%);
+  color: var(--main-color);
+  font-family: Bebas Neue;
+  font-weight: 400;
+  opacity: 20%;
+  font-size: 400px;
+}
+.how .right__how .backFont__how {
+  right: 33%;
+  left: unset;
+}
+.contact {
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding-bottom: 200px;
+}
+.contact h2 {
+  text-transform: uppercase;
+  font-family: Bebas Neue;
+  font-size: 200px;
+  margin: 0 auto;
+  font-weight: 400;
+  line-height: 100%;
+  padding-bottom: 25px;
+}
+.contact li,
+.contact p {
+  font-size: 36px;
+}
+.contact .right__contact li a,
+.right__contact p {
+  font-family: Bebas Neue;
+  font-weight: 400;
+  font-size: 48px;
+}
+.contact .right__contact ul {
+  padding-top: 25px;
+}
+.contact .right__contact li {
+  margin: 10px 0;
+}
+.contact .right__contact li a {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.contact .right__contact li svg {
+  transform: translateY(-5px);
+  padding-right: 10px;
+}
